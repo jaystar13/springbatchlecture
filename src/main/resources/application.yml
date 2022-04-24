@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: local
+    active: mysql
 
 ---
 spring:
@@ -23,9 +23,9 @@ spring:
       on-profile: mysql
   datasource:
     hikari:
-      jdbc-url: jdbc:mysql://localhost:3306/springbatch?useUnicode=true&characterEncoding=utf8
+      jdbc-url: jdbc:mysql://localhost:3307/springbatch?useUnicode=true&characterEncoding=utf8
       username: root
-      password: 2098
+      password: root
       driver-class-name: com.mysql.cj.jdbc.Driver
   batch:
     jdbc:
